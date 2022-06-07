@@ -4,26 +4,13 @@ import { useAuthStore } from "../stores/use-auth";
 
 let routes = [
   {
-    path: "/dashboard",
+    path: "/",
     name: "dashboard-page",
     meta: {
       title: "Dashboard",
-      requiresAuth: true,
+      // requiresAuth: true,
     },
     component: () => import("../views/Dashboard.vue"),
-  },
-  {
-    path: "/",
-    name: "welcome-page",
-    meta: {
-      title: "Welcome",
-    },
-    component: () => import("../views/Welcome.vue"),
-  },
-  {
-    path: "/auth",
-    name: "Auth",
-    component: () => import(/* webpackChunkName: "home" */ "../views/Auth.vue"),
   },
   {
     path: "/:catchAll(.*)",
