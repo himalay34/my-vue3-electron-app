@@ -1,0 +1,74 @@
+{
+  "name": "my-vue3-electron-app",
+  "productName": "my-vue3-electron-app",
+  "version": "1.0.0",
+  "description": "My Electron application with Vue 3 electron forge webpack",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "win:32": "electron-forge make --arch=ia32",
+    "win:64": "electron-forge make --arch=x64",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
+  },
+  "keywords": [
+    "vue3",
+    "webpack",
+    "electron-forge"
+  ],
+  "author": {
+    "name": "Blind Mirror",
+    "email": "ngangchill@gmail.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": "./forge.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "@electron-forge/plugin-webpack": "6.0.0-beta.63",
+    "@types/pouchdb": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@vercel/webpack-asset-relocator-loader": "1.7.0",
+    "@vue/compiler-sfc": "^3.2.36",
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.0.0",
+    "electron": "19.0.3",
+    "electron-devtools-installer": "^3.2.0",
+    "eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.25.0",
+    "fork-ts-checker-webpack-plugin": "^6.0.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-loader": "^2.0.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "style-loader": "^3.0.0",
+    "tailwindcss": "^3.0.24",
+    "ts-loader": "^9.2.2",
+    "typescript": "~4.5.4",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^17.0.0",
+    "vue-style-loader": "^4.1.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.22.8",
+    "dayjs": "^1.11.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "pinia": "^2.0.14",
+    "pinia-persistedstate": "^0.1.2",
+    "pinia-undo": "^0.1.4",
+    "secure-ls": "^1.2.6",
+    "underscore": "^1.13.4",
+    "vue": "^3.2.37",
+    "vue-router": "^4.0.15"
+  }
+}
